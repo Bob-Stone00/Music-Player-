@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>playlist</title>
+</head>
+
+<body>
+    <div class="screen-components">
+        <div class="top-nav-bar">
+            <div class="down-arrow">
+                <img src="bx-chevron-down.svg" height="27" width="27">
+            </div>
+
+            <div class="collective-components">
+                <img src="bx-devices.svg" height="27" width="27">
+                <img src="bx-volume-full.svg" height="27" width="27">
+                <img src="bx-bar-chart.svg" height="27" width="27">
+                <img src="bx-dots-vertical-rounded.svg" height="27" width="27">
+            </div>
+        </div>
+
+        <div class="music-pic">
+
+        </div>
+
+        <div class="playables">
+            <div class="first-playables">
+                <div class="div1">
+                    <img src="bxs-playlist.svg" height="27" width="27">
+                </div>
+
+                <div>
+                    <img src="bx-heart.svg" height="27" width="27">
+                </div>
+
+                <div class="div2">
+                    <img src="bxs-microphone-off.svg" height="27" width="27">
+                </div>
+            </div>
+            
+            <div class="track-line">
+               <div class="track" id="progress"></div>
+               <div class="time">
+                <div class="tota-time" id="totalTime">00:00</div>
+                <div class="last-time" id="currentTime">00:00</div>
+               </div>
+
+            </div>
+
+            <audio id="myaudi">
+                <source src="" type="audio/mpeg">
+            </audio>
+
+            <div class="playable-buttons">
+                <img  class="c1" src="bx-shuffle.svg" height="27" width="27" onclick="">
+                <img class="c2" src="bx-skip-previous.svg" height="27" width="27">
+                <img  id="c3"src="bx-play.svg" height="27" width="27"  onclick="play()">
+                <img  class="c4"src="bx-skip-next.svg" height="27" width="27" onclick="nextSong()">
+                <img class="c5" src="bx-repeat.svg" height="27" width="27">
+            </div>
+
+        </div>
+
+        
+    </div>
+</body>
+
+<script src="Js.js"></script>
+</html>
